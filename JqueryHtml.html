@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            background-color: red;
+            color: white;
+            font-size: 30px;
+            height: 30px;
+            white-space: nowwrap;
+        }
+
+    </style>
+</head>
+<body>
+
+    <input type="text" value="Enter something here">
+    <h1>hello world</h1>
+    <p>Lorem ipsum dolor sit amet consectetur <span style="font-weight: 900;">I am a span</span> adipisicing elit. Fugit, ad?</p>
+    <button>Button</button>
+
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+
+//--------------------------------------------------------
+$(document).ready(()=>{
+//get    
+//    console.log($("span").text());
+//    console.log($("p").text());
+//    console.log($("p").html());
+
+//set
+
+   $("span").text("me span ahe");
+   $("span").html("<b> hello span </b>");
+   $("input").val("enter something for input");
+});
+
+//----------------------------------------------------
+//append , preppend , before , after
+$(document).ready(()=>{
+    // $("span").prepend("<p>Prepend use in jquery </p>");
+    // $("span").append("<p>Append use in jquery </p>");
+    // $("span").before("<i>Before use in jquery </i>");
+    // $("span").after("<i>After use in jquery </i>");
+
+});
+
+//-------------------------------------------------------------
+// remove , empty  -----  for elements
+$(document).ready(()=>{
+    $("button").click(()=>{
+        // $("span").remove();
+    });
+    $("button").click(()=>{
+        // $("span").empty();
+    })
+});
+
+//---------------------------------------------------------------
+// css classes
+$(document).ready(()=>{
+    $("button").click(()=>{
+    // $("span").addClass("red");
+    // $("span").removeClass("red");
+    // $("span").toggleClass("red");
+});
+});
+
+//-------------------------------------------------------------------
+//css
+$(document).ready(()=>{
+    $("button").click(()=>{
+        // // $("span").css("background-color","red");
+        // $("span").css({"background-color":"red","color":"white"});
+    });
+    });
+
+//--------------------------------------------------------------------
+//Dimensions
+$(document).ready(()=>{
+    $("button").click(()=>{
+        // console.log($("span").height());
+        // console.log($("span").width());
+        // console.log($("span").innerHeight());
+        // console.log($("span").innerWidth());
+        // console.log($("span").outerHeight());
+        // console.log($("span").outerWidth());
+    });
+    });
+    
+
+
+
+   
+
+    </script>
+</body>
+</html>
